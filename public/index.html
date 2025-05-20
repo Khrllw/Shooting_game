@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoot!</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<script src="/js/parameters.js"></script>
+
+<div id="header">
+    <h3 id="scoreCounterLabel">Score: 0</h3>
+    <h1 id="mainHeader">Shoooot!</h1>
+    <h3 id="levelCounterLabel">Lvl: 1</h3>
+</div>
+
+<div id="aimWrapper">
+    <div id="aim"></div>
+</div>
+
+<div id="mainArea"></div>
+</body>
+
+<footer>
+    <div class="statData" id="statDataBlock">
+        <h4 id="hitStatLabel">Hits: 0</h4>
+        <h4 id="misclickStatLabel">Misclicks: 0</h4>
+    </div>
+
+    <div class="statData" id="statTargetsBlock">
+        <button class="targetBtns" id="delTargetBtn" onclick="deleteTarget()"></button>
+        <h2 id="targetCounterLabel">Targets: 1</h2>
+        <button class="targetBtns" id="addTargetBtn" onclick="addTarget()"></button>
+    </div>
+
+    <div class="statData" id="creator">
+        <h4>IKPI-23</h4>
+        <h4>Kharlova A.A.</h4>
+    </div>
+</footer>
+
+<script src="/js/functions.js"></script>
+<script src="/js/handlers.js"></script>
+<script src="/js/updaters.js"></script>
+
+<script>
+    addTarget();
+</script>
+
+</html>

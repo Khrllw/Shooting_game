@@ -1,4 +1,4 @@
-# Лабораторная работа №2: "Тир - Попади в цель"
+# Мини-игра "Тир - Попади в цель"
 
 ## Описание проекта
 
@@ -16,6 +16,9 @@
 - **CSS3**       (переменные, анимации, transform)
 - **JavaScript** (обработчики событий mousemove, requestAnimationFrame)
 - **Docker**     (контейнеризация приложения)
+
+## Скриншот
+![Скрин_1](screenshots/main_screenshot.png)
 
 ## Структура проекта
 
@@ -57,6 +60,11 @@ project/
 ```bash
 docker build -t target-game .
 docker run -d -p 8080:80 --name target-container target-game
+```
+
+#### Быстро открыть из командной строки
+```bash
+start http://localhost:8080/index.html
 ```
 
 ## Автор

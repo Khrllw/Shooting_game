@@ -1,9 +1,12 @@
 /*------------------ Variables ------------------*/
-const aimElem = document.getElementById('aimWrapper');
-const { left, top } = aimElem.getBoundingClientRect();
-let leftAimPos = left;
-let topAimPos = top;
+window.addEventListener('load', () => {
+    const aimElem = document.getElementById('aimWrapper');
+    const { left, top: topPos } = aimElem.getBoundingClientRect();
+    let leftAimPos = left;
+    let topAimPos = topPos;
 
+    // далее — твой код, использующий aimElem и позиционирование...
+});
 /*------------------ Movement Handler ------------------*/
 const handleMovement = (key) => {
     const aimWidth = aimElem.clientWidth;
